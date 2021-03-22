@@ -16,6 +16,10 @@ public class OptionDefinitionBuilder {
         return this;
     }
 
+    public OptionDefinitionBuilder withHelpDescription(String helpDescription) {
+        return this;
+    }
+
     public OptionDefinitionBuilder asRequired() {
         return this;
     }

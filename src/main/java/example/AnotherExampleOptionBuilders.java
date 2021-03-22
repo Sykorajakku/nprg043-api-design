@@ -3,15 +3,15 @@ package example;
 import parser.Option;
 import parser.OptionBuilder;
 
-public class OptionBuilderExample {
+public class AnotherExampleOptionBuilders {
 
         public static final Option VERSION_OPTION = OptionBuilder.builder()
-                .asLong("version")
-                .asShort("v")
+                .asLong("copy")
+                .asShort("c")
                 .asRequired()
                 .withOptionalParameterSequence()
-                    .parameterBuilder()
-                    .build()
+                    .withSimpleStringParameter()
+                    .withSimpleStringParameter()
                 .buildOption();
 
         public static final Option FLAG_OPTION = OptionBuilder.builder()

@@ -12,11 +12,12 @@ public class OptionParametersBuilder {
         return new OptionParameterBuilder(this);
     }
 
-    public Option buildOption() {
-        return new Option(); // pass all definitions, do checks
+    public OptionParametersBuilder withSimpleStringParameter() {
+        return this;
     }
 
-
-
+    public Option buildOption() {
+        return optionBuilder.build(); // pass all definitions, do checks
+    }
 
 }
